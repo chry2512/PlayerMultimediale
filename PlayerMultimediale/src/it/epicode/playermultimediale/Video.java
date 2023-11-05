@@ -45,6 +45,7 @@ public class Video extends File implements Volume, Luminosita {
 	public Video play() {
 		String asterischi = "";
 		String esclamativo = "";
+		String dollari = "";
 		String durata = "";
 		for (int x = 0; x < this.luminosita; x++) {
 			asterischi += "*";
@@ -54,7 +55,7 @@ public class Video extends File implements Volume, Luminosita {
 
 		}
 		for (int x = 0; x < this.durata; x++) {
-
+			dollari += "$";
 		}
 
 		System.out.println(durata + " " + esclamativo + " " + asterischi);
